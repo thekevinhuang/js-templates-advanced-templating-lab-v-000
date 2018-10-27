@@ -11,8 +11,8 @@ function init() {
 }
 
 function createRecipe() {
-  let formName = document.getElementById("name").innerHTML
-  let formDescription = document.getElementById("description").innerHTML
+  let formName = document.getElementById("name").value
+  let formDescription = document.getElementById("description").value
   let formIngredients = document.getElementsByName("ingredients")
 
   let recipe = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
