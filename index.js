@@ -11,7 +11,12 @@ function init() {
 }
 
 function createRecipe() {
-
+  let formName = document.getElementById("name").innerHTML
+  let formDescription = document.getElementById("description").innerHTML
+  let formIngredients = document.getElementsByName("ingredients")
+  
+  let recipe = Handlebars.compile(document.getElementById("recipe-template"))
+  document.getElementById("main").innerHTML = 
 }
 
 function updateRecipe() {
