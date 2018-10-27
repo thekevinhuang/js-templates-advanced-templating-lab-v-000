@@ -29,11 +29,11 @@
           Description:<br>
           <input type="text" value="{{description}} "id= "description" name="description"><br>
           Ingredients:<br>
-          <input type="text" value = "{{ingredients[0].innerHTML}}" name="ingredients"><br>
-          <input type="text" value = "{{ingredients[1].innerHTML}}" name="ingredients"><br>
-          <input type="text" value = "{{ingredients[2].innerHTML}}" name="ingredients"><br>
-          <input type="text" value = "{{ingredients[3].innerHTML}}" name="ingredients"><br>
-          <input type="text" value = "{{ingredients[4].innerHTML}}" name="ingredients"><br>
+          <input type="text" value = `${{{ingredients}}[0].innerHTML}` name="ingredients"><br>
+          <input type="text" value = `${{{ingredients}}[1].innerHTML}` name="ingredients"><br>
+          <input type="text" value = `${{{ingredients}}[2].innerHTML}` name="ingredients"><br>
+          <input type="text" value = `${{{ingredients}}[3].innerHTML}` name="ingredients"><br>
+          <input type="text" value = `${{{ingredients}}[4].innerHTML}` name="ingredients"><br>
           <input type="submit">
         </form>
     </script>
