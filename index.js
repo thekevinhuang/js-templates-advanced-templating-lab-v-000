@@ -7,7 +7,7 @@ function init() {
   })
 
   Handlebars.registerPartial('recipeFormPartial', document.getElementById("recipe-form-partial").innerHTML)
-  
+
   let initialForm = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
   document.getElementById("main").innerHTML += initialForm()
 }
