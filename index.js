@@ -6,19 +6,19 @@ function init() {
     return new Handlebars.SafeString(this.value)
   })
 
-  
+
 }
 
 function createRecipe() {
-  
+
 }
 
 function updateRecipe() {
-  
+
 }
 
 function displayEditForm() {
-  
+
 }
 
 
