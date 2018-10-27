@@ -31,7 +31,7 @@ function createRecipe() {
 }
 
 function displayEditForm() {
-  alert(name)
+  alert(this.name)
   let editForm = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
   document.getElementById("main").innerHTML += editForm({name:name, description:description, ingredients:ingredients})
 }
