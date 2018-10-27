@@ -29,7 +29,7 @@
     <script id="recipe-template" type="text/x-handlebars-template">
       <header>{{name}}</header>
       {{>recipeDetailsPartial}}
-      <a href="#" onclick="displayEditForm()">Edit Recipe</a>
+      <a href="#" onclick="displayEditForm({name:name, description:description, ingredients:ingredients})">Edit Recipe</a>
     </script>
 
     <script id="recipe-details-partial" type="text/x-handlebars-template">
