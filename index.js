@@ -25,7 +25,10 @@ function updateRecipe() {
 }
 
 function displayEditForm() {
+  let editName = document.getElementById("name").value
+  let editDescription = document.getElementById("description").value
 
+  let editIngredients = document.getElementsByTagName("li")
 }
 
 
