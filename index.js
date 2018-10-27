@@ -14,7 +14,9 @@ function createRecipe() {
   let formName = document.getElementById("name").value
   let formDescription = document.getElementById("description").value
   let formIngredients = document.getElementsByName("ingredients")
+  
 
+  
   let recipe = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
   document.getElementById("main").innerHTML = recipe({name: formName, description: formDescription, ingredients: formIngredients})
 
@@ -30,7 +32,10 @@ function displayEditForm() {
 
   let editIngredients = document.getElementsByTagName("li")
   
+  let ing1 = editIngredients[0].innerHTML
+  let ing2 = editIngredients[1].innerHTML
   
+
   let editRecipe = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
   document.getElementById("main").innerHTML = editRecipe({name:editName, description:editDescription, ingredients: editIngredients})
 }
