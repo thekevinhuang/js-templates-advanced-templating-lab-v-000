@@ -17,7 +17,7 @@ function createRecipe() {
 
   let recipe = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
   document.getElementById("main").innerHTML = recipe({name: formName, description: formDescription, ingredients: formIngredients})
-  
+
 }
 
 function updateRecipe() {
