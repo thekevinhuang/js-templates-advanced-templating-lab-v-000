@@ -29,7 +29,8 @@ function displayEditForm() {
   let editDescription = document.getElementById("description").innerHTML
 
   let editIngredients = document.getElementsByTagName("li")
-  alert(editName)
+  
+  
   let editRecipe = Handlebars.compile(document.getElementById("recipe-form-template").innerHTML)
   document.getElementById("main").innerHTML = editRecipe({name:editName, description:editDescription, ingredients: editIngredients})
 }
