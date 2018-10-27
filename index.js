@@ -23,7 +23,14 @@ function createRecipe() {
 }
 
 function updateRecipe() {
+  let formName = document.getElementById("name").value
+  let formDescription = document.getElementById("description").value
+  let formIngredients = document.getElementsByName("ingredients")
 
+
+
+  let recipe = Handlebars.compile(document.getElementById("recipe-template").innerHTML)
+  document.getElementById("main").innerHTML = recipe({name: formName, description: formDescription, ingredients: formIngredients})
 }
 
 function displayEditForm() {
